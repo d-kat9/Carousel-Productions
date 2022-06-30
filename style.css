@@ -1,0 +1,473 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: black; }
+    
+  .clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  
+  
+  /* 2. Typography Styles
+  ======================================== */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Goldman', cursive;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    transition: font-size 0.25s ease;
+  }
+  h1 {
+    font-size: calc(100px / 1.5);
+    line-height: 0.85;
+  }
+  h2 {
+    font-size: calc(65px / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+  }
+  @media(min-width: 720px) {
+    h1 {
+      font-size: calc(65px / 1.25);
+    }
+    h2 {
+      font-size: calc(65px / 1.25);
+    }
+  }
+  @media(min-width: 1024px) {
+    h1 {
+      font-size: 100px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+  }
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 15px;
+  }
+  a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  ul {
+    display: inline-block;
+    text-align: center;
+  }
+  li {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 23px;
+    display: inline;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
+  
+
+img:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+  /* 3. Structure Styles
+  ======================================== */
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 15px;
+    
+  }
+
+  .container:before, .container:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  /* 4. Modules Styles
+  ======================================== */
+  
+  /* Site Navigation */
+  .site-navigation {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 30px 1em;
+  }
+  .site-header-left {
+    display: inline-block;
+    max-width: 120px;
+  }
+
+  
+  .site-header-left li {
+    line-height: 0;
+  }
+  .site-header-right {
+    display: inline-block;
+    float: right;
+    
+  }
+  .site-header-right li,
+  .footer-right li {
+    display: inline;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .site-header-right li a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  #about p {
+    text-align: justify;
+  }
+
+  .container ul {
+    
+    font-size: 1.4em;
+    line-height: normal;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    
+  }
+  .container li {
+    list-style-type: circle;
+    display: inline;
+    float: center;
+    padding: 20px ;
+    text-align: center;
+  }
+
+  /* Site Footer */
+  .footer {
+    background-color: #333333;
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+  }
+  .footer-navigation {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+  
+  /* 5. Component Styles
+  ======================================== */
+  button {
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    
+  }
+  .button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    font-family: 'Goldman', cursive;
+  }
+  .button:hover {
+    opacity: 0.75;
+    text-decoration-color: #333333;
+  }
+  .button-primary {
+    border: 1px solid #FFFFFF;
+    color: #000000;
+    background-color: #ffffff;
+    float: left;
+  }
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+    transition: border-color 0.5s ease;
+    background-color: #e0e0e0;
+    color: black;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  input {
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+  }
+  
+  /* 6. Page Styles
+  ======================================== */
+  .photo-hero {
+    background: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://live.staticflickr.com/65535/52181193245_f80f933c47_h.jpg");
+    min-height: 700px;
+    
+    
+  }
+  .photo-hero-text {
+    padding: 0 20px;
+    display: inline-block;
+
+  }
+  .photo-hero h1 {
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    background-color: #000000;
+    background-image: linear-gradient(
+      45deg,
+      #d81616 8.666%, 
+      #da7154 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+    font-family: 'Goldman', cursive;
+    display: inline-block;
+  }
+  @keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 650%;
+  }
+}
+
+.photo-hero h1:hover{
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+  .photo-hero-text h3  {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Goldman', cursive;
+    display: inline-block;
+  }
+  .photo-hero p {
+    color: #ffffff;
+    background: rgba(157, 157, 157, 0.88);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .photo-grid {
+    margin-top: -80px;
+  }
+  .image-box {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    margin: 20px;
+    max-height: 450px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+  }
+
+  .image-box-big {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    border: 2px #000000;
+    width: calc(100% - 40px);
+    margin: 20px;
+    max-height: 700px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+    align-items: center;
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+  .photo-blockquote {
+    background-image: url(https://live.staticflickr.com/8209/28684749225_60a4aed7d1_k.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+    padding-bottom: 80px;
+  }
+  blockquote p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  blockquote:before {
+    content: '  ';
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 150px;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-top: 40px;
+  }
+  blockquote footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F9F9F9;
+  }
+  
+  .photo-about, .photo-contact {
+    text-align: center;
+    padding: 80px 0;
+  }
+  .photo-about h2 {
+    color: #888888;
+    margin-bottom: 30px;
+  }
+  .photo-about p {
+    color: #888888;
+    padding: 0 10%;
+    text-align: left;
+  }
+  .photo-contact {
+    background-color: #555555;
+  }
+  .photo-contact h2 {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .photo-contact p {
+    color: #FFFFFF;
+    padding: 0 10%;
+    text-align: left;
+  }
+  .photo-contact-form {
+    padding: 0 10%;
+  }
+  .photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3), .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
+    margin: 0 0 20px;
+  }
+  
+  
+  @media (min-width: 585px) {
+    .photo-hero {
+      min-height: 600px;
+    }
+  }
+  @media (min-width: 720px) {
+    .photo-hero {
+      min-height: 500px;
+    }
+    .image-box {
+      width: calc(33.3333% - 40px);
+    }
+    .photo-about p, .photo-contact p, .photo-contact-form {
+      padding: 0 20%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .photo-hero {
+      min-height: 700px;
+    }
+    .photo-hero-text {
+      width: 70%;
+      display: block;
+    }
+    .photo-contact-form input {
+      width: 48%;
+      display: inline-block;
+      float: left;
+    }
+    .photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3) {
+      margin: 0 2% 20px 0;
+    }
+    .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
+      margin: 0 0 20px 2%;
+    }
+  }
+  @media (max-width:480px){
+    .site-header-left{
+      display: none;
+    }
+    .site-header-right{
+      display: none;
+    }
+    .photo-hero-text{
+      display: inline;
+    }
+    .button {
+      float: center;
+    }
+  }
+    
