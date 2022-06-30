@@ -169,7 +169,7 @@ img:hover {
     
   }
   .container li {
-    list-style-type: circle;
+    list-style-type: none;
     display: inline;
     float: center;
     padding: 20px ;
