@@ -80,6 +80,7 @@
     font-size: 16px;
     line-height: 23px;
     margin: 0 0 15px;
+    text-align: justify;
   }
   a {
     font-family: 'Josefin Sans', sans-serif;
@@ -154,10 +155,11 @@ img:hover {
     margin-left: 20px;
   }
   
-  #about #contact p {
+  #about p {
     text-align: justify;
   }
 
+  
   .container ul {
     
     font-size: 1.4em;
