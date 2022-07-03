@@ -1,3 +1,14 @@
+<form class="photo-contact-form">
+          <form role="region" id="contact" class="photo-contact" method="post" action="/form.php">
+          <input type="Name" placeholder="Name">
+          <input type="Email" placeholder="Email">
+          <input type="phone" placeholder="Phone">
+          <input type="Message" placeholder="Message">
+          <textarea placeholder="Something"></textarea>
+          <button type="submit" class="button button-primary">Send Request</button>
+        </form>
+
+
 <?php
 if (isset($_POST['Email'])) {
 
