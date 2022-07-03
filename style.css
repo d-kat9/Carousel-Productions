@@ -453,7 +453,7 @@ img:hover {
       margin: 0 0 20px 2%;
     }
   }
-  @media (max-width:480px){
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     .site-header-left{
       display: block;
       float: right;
@@ -468,5 +468,5 @@ img:hover {
     .button {
       float: center;
     }
-  }
+
     
