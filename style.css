@@ -391,7 +391,7 @@ img:hover {
     text-align: center;
     padding: 80px 0;
   }
-  .photo-about h2 {
+  .photo-about .photo-contact h2 {
     color: #888888;
     margin-bottom: 30px;
   }
@@ -403,12 +403,9 @@ img:hover {
   .photo-contact {
     background-color: #555555;
   }
-  .photo-contact h2 {
-    color: #FFFFFF;
-    margin-bottom: 30px;
-  }
+ 
   .photo-contact p {
-    color: #FFFFFF;
+    color: #888888;
     padding: 0 10%;
     text-align: left;
   }
