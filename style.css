@@ -455,13 +455,15 @@ img:hover {
   }
   @media (max-width:480px){
     .site-header-left{
-      display: none;
+      display: block;
+      float: right;
     }
     .site-header-right{
       display: none;
     }
     .photo-hero-text{
       display: inline;
+      float: center;
     }
     .button {
       float: center;
