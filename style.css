@@ -466,9 +466,19 @@ img:hover {
     .photo-hero-text{
       display: inline;
       float: center;
+      font-size: 1em;
     }
     .button {
       float: center;
     }
+    
+    #contact {
+      text-align: justify;
+    }
+    .photo-hero {
+      width: 100%;
+    }
+    
+}
 
     
