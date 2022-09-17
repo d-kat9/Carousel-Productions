@@ -80,7 +80,7 @@
     font-size: 16px;
     line-height: 23px;
     margin: 0 0 15px;
-    text-align: justify;
+    text-align: left;
   }
   a {
     font-family: 'Josefin Sans', sans-serif;
@@ -474,7 +474,7 @@ img:hover {
     }
     
     #contact {
-      text-align: justify;
+      text-align: left;
     }
     .photo-hero {
       width: 100%;
