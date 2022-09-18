@@ -433,7 +433,7 @@ img:hover {
   
   @media (min-width: 585px) {
     .photo-hero {
-      /*min-height: 600px;*/
+      min-height: 600px;
       width: 100%;
     }
     .photo-hero h3 {
@@ -442,7 +442,7 @@ img:hover {
   }
   @media (min-width: 720px) {
     .photo-hero {
-      /*min-height: 500px;*/
+      min-height: 500px;
     }
     .photo-hero h3 {
       display: none;
