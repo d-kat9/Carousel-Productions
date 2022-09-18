@@ -183,7 +183,7 @@ img:hover {
     background-color: #333333;
     color: #000000;
     padding: 30px;
-    text-align: center;
+    text-align: left;
   }
   .footer-navigation {
     margin: 0 auto;
@@ -342,6 +342,7 @@ img:hover {
   }
   .image-box:hover {
     transform: scale(1.3);
+    position: absolute;
   }
 
   .image-box-big {
@@ -360,7 +361,7 @@ img:hover {
     height: auto;
   }
   .photo-blockquote {
-    background-image: url(https://live.staticflickr.com/8209/28684749225_60a4aed7d1_k.jpg);
+    background-image: url(https://live.staticflickr.com/5613/30225746393_f98e702291_k.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
