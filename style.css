@@ -66,9 +66,7 @@
     h2 {
       font-size: calc(65px / 1.25);
     }
-    h3 {
-      display: none;
-    }
+    
   }
   @media(min-width: 1024px) {
     h1 {
@@ -162,7 +160,13 @@ img:hover {
     text-align: left;
   }
 
+   #about h2 {
+    text-align: center;
+  }
   
+  #contact h2 {
+    text-align: center;
+  }
   .container ul {
     
     font-size: 1.4em;
@@ -432,10 +436,16 @@ img:hover {
       /*min-height: 600px;*/
       width: 100%;
     }
+    .photo-hero h3 {
+      display: none;
+    }
   }
   @media (min-width: 720px) {
     .photo-hero {
       /*min-height: 500px;*/
+    }
+    .photo-hero h3 {
+      display: none;
     }
     .image-box {
       width: calc(33.3333% - 40px);
