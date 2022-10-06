@@ -348,7 +348,7 @@ img:hover {
     transition: transform .2s;
   }
   .image-box:hover {
-    transform: scale(1.3);
+    transform: scale(0.3);
     
   }
 
