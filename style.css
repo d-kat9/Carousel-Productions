@@ -345,10 +345,11 @@ img:hover {
     overflow: hidden;
     float: left;
     display: inline-block;
-    transition: transform .2s;
+    transition: transform 1s linear;
   }
   .image-box:hover {
-    transform: scale(0.3);
+    transform: scale(1.1);
+  
     
   }
 
